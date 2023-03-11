@@ -14,6 +14,8 @@ function MainComponent() {
         </div>
         <div className='mainScreenSearchFilters'>
             <TextInputFilter label="City" placeholder="Select your city"/>
+            <TextInputFilter label="Dates" placeholder="Select your dates"/>
+            <TextInputFilter label="Guests" placeholder="Add guests"/>
         </div>
     </div>
   )

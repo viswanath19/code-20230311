@@ -1,10 +1,11 @@
 .inputComponent {
-    position: absolute;
     width: 210px;
     height: 70px;
 
     background: #FFFFFF;
     border-radius: 16px;
+
+    margin: 10px;
 }
 .inputText {
     position: absolute;
@@ -26,7 +27,7 @@
     padding: 0px 10px 10px 10px;
     margin-top: 10px;
     border-radius: 16px;
-    top:15px;
+    top:20px;
 
     color: #000000;
 }
