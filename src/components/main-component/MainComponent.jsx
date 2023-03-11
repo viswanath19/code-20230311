@@ -2,6 +2,7 @@ import React from 'react'
 import './main.css';
 import mainBackground from '../../assets/main-background.png';
 import TextInputFilter from '../common-components/TextInputFilter/TextInputFilter';
+import ButtonComponent from '../common-components/ButtonComponent/ButtonComponent';
 
 function MainComponent() {
   return (
@@ -16,6 +17,7 @@ function MainComponent() {
             <TextInputFilter label="City" placeholder="Select your city"/>
             <TextInputFilter label="Dates" placeholder="Select your dates"/>
             <TextInputFilter label="Guests" placeholder="Add guests"/>
+            <ButtonComponent />
         </div>
     </div>
   )
