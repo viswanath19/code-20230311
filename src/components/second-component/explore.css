@@ -1,0 +1,50 @@
+.exploreComponent {
+    width: 1152px;
+    height: 700px;
+    top:80px;
+    position: relative;
+}
+
+
+.subHeading-1 {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    /* or 20px */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    text-align: left;
+    left: 70px;
+    top:150px;
+}
+ 
+.exploreTitle {
+    position: absolute;
+    width: 234px;
+    height: 70px;
+    left: 69px;
+    top: 79px;
+
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 110%;
+    /* or 70px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
