@@ -1,6 +1,5 @@
 import React from 'react';
 import './explore.css';
-import '../main-component/main.css';
 
 function ExploreComponent() {
   return (

@@ -5,6 +5,7 @@ import TextInputFilter from '../common-components/TextInputFilter/TextInputFilte
 import ButtonComponent from '../common-components/ButtonComponent/ButtonComponent';
 import FooterComponent from '../footer-component/FooterComponent';
 import ExploreComponent from '../second-component/ExploreComponent';
+import About from '../third-component/About';
 
 function MainComponent() {
     const [currentScreen,setCurrentScreen] = useState('home');
@@ -14,7 +15,9 @@ function MainComponent() {
                 setCurrentScreen('explore');
                 break;
             case '/about':
+                console.log("Enter Screen About")
                 setCurrentScreen('about');
+                break;
             case '/':
                 setCurrentScreen('home');
                 break;
@@ -24,6 +27,7 @@ function MainComponent() {
         }
 
     },[window.location.pathname]);
+    console.log("current screen",currentScreen);
   return (
     <>
         {currentScreen === 'home' && <div className='mainScreen'>
@@ -43,6 +47,10 @@ function MainComponent() {
 
         {currentScreen === 'explore' && <div className='mainScreenHeader'>
             <ExploreComponent />    
+        </div>}
+
+        {currentScreen === 'about' && <div className='mainScreenHeader'>
+            <About />    
         </div>}
         
         <div className='navBars'>
