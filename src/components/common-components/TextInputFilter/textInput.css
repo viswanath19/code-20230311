@@ -47,9 +47,9 @@
     
 }
 
-@media screen and (min-width:390px) and (max-width:844px) {
+@media screen and (min-width:340px) and (max-width:844px) {
     .inputComponent {
-        width: 333px;
+        width: 300px;
         height: 70px;
     
         background: #FFFFFF;
@@ -60,7 +60,7 @@
 
     .inputText {
         position: absolute;
-        width: 300px;
+        width: 250px;
         height: 25px;
     
         font-family: 'Ubuntu';
