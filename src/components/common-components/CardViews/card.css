@@ -1,0 +1,11 @@
+.cardview {
+    width: 500px;
+    height: 300px;
+    left: 65px;
+    top: 210px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 25px;
+}

@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.aboutCards {
+    display: flex;
+}
+
 .aboutTitle {
     position: absolute;
     height: 70px;

@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.exploreCards {
+    display: flex;
+}
+
 
 .subHeading-1 {
     position: absolute;
