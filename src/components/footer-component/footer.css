@@ -1,0 +1,8 @@
+.footerComponent {
+    position: relative;
+    width: 1152px;
+    height: 700px;
+
+    background: #FFFFFF;
+    border-radius: 0px 0px 30px 30px;
+}

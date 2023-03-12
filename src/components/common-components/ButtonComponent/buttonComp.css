@@ -1,4 +1,4 @@
-.buttonComp {
+.buttonComponent {
     width: 235px;
     height: 70px;
     left: 791px;
@@ -8,10 +8,11 @@
     border-radius: 16px;
 
     margin: 10px;
+    border: none;
 }
 
 .buttonText {
-    left: 23;
+    left: 50px;
     right: 0;
     top: 0;
     bottom: 0;
@@ -28,4 +29,10 @@
     text-align: center;
 
     color: #FFFFFF;
+
+    position: relative;
+}
+
+.buttonImg {
+    
 }
