@@ -1,13 +1,14 @@
 @media screen and (min-width:912px) {
     .aboutComponent {
-        width: 1152px;
+        width: 1090px;
         height: 900px;
         top:80px;
         position: absolute;
+        background-color: #FFFFFF;
     }
     .aboutCards-1 {
         display: flex;
-        margin-top: 200px;
+        margin-top: 125px;
     }
     
     .aboutCards-2 {
@@ -18,7 +19,6 @@
         position: absolute;
         height: 70px;
         left: 69px;
-        top: 79px;
     
         font-family: 'Exo 2';
         font-style: normal;
@@ -53,7 +53,7 @@
     
         text-align: left;
         left: 70px;
-        top:150px;
+        margin-top: 75px;
     }
 }
 
