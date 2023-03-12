@@ -1,58 +1,119 @@
-.aboutComponent {
-    width: 1152px;
-    height: 900px;
-    top:80px;
-    position: absolute;
+@media screen and (min-width:912px) {
+    .aboutComponent {
+        width: 1152px;
+        height: 900px;
+        top:80px;
+        position: absolute;
+    }
+    .aboutCards-1 {
+        display: flex;
+        margin-top: 200px;
+    }
+    
+    .aboutCards-2 {
+        display: flex;
+        margin-top: 50px;
+    }
+    .aboutTitle {
+        position: absolute;
+        height: 70px;
+        left: 69px;
+        top: 79px;
+    
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 110%;
+        /* or 70px */
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #000000;
+    }
+    
+    .aboutHeading-1 {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+    
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 110%;
+        /* or 20px */
+    
+        display: flex;
+        align-items: center;
+    
+        color: #000000;
+    
+        text-align: left;
+        left: 70px;
+        top:150px;
+    }
 }
 
-.aboutCards-1 {
-    display: flex;
-    margin-top: 200px;
+@media screen and (min-width:390px) and (max-width:844px) {
+    .aboutComponent {
+        width: 412px;
+        height: 736px;
+        top:80px;
+        position: absolute;
+    }
+    .aboutCards-1 {
+        margin-top: 120px;
+    }
+    
+    .aboutCards-2 {
+        margin-top: 50px;
+    }
+    
+    .aboutTitle {
+        position: absolute;
+        width: 270px;
+        height: 100px;
+        left: 69px;
+    
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 110%;
+        /* or 70px */
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #000000;
+    }
+    
+    .aboutHeading-1 {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+    
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 110%;
+        /* or 20px */
+    
+        display: flex;
+        align-items: center;
+    
+        color: #000000;
+    
+        text-align: left;
+        left: 70px;
+        top:70px;
+    }
 }
 
-.aboutCards-2 {
-    display: flex;
-    margin-top: 50px;
-}
 
-.aboutTitle {
-    position: absolute;
-    height: 70px;
-    left: 69px;
-    top: 79px;
 
-    font-family: 'Exo 2';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 110%;
-    /* or 70px */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
-.aboutHeading-1 {
-    position: absolute;
-    width: 300px;
-    height: 40px;
-
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 110%;
-    /* or 20px */
-
-    display: flex;
-    align-items: center;
-
-    color: #000000;
-
-    text-align: left;
-    left: 70px;
-    top:150px;
-}
