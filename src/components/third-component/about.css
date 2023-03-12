@@ -1,12 +1,18 @@
 .aboutComponent {
     width: 1152px;
-    height: 700px;
+    height: 900px;
     top:80px;
-    position: relative;
+    position: absolute;
 }
 
-.aboutCards {
+.aboutCards-1 {
     display: flex;
+    margin-top: 200px;
+}
+
+.aboutCards-2 {
+    display: flex;
+    margin-top: 50px;
 }
 
 .aboutTitle {

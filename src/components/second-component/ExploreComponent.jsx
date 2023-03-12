@@ -10,8 +10,10 @@ function ExploreComponent() {
       <span className='exploreTitle'>Explore</span>
         <span className='subHeading-1'>From one-guest rooms to penthouses with pools and gardens </span>
         <div className='exploreCards'>
-            <Card backgroundImg={exploreBackgroundImg1}/>
-            <Card backgroundImg={exploreBackgroundImg2}/>
+            <Card cards={[
+                {backgroundImg:exploreBackgroundImg1,header:'Room with one king-size bed'},
+                {backgroundImg:exploreBackgroundImg2,header:'Penthouse for 8 person'}
+            ]} />
         </div>
     </div>
   )

@@ -2,13 +2,13 @@
     width: 1152px;
     height: 700px;
     top:80px;
-    position: relative;
+    position: absolute;
 }
 
 .exploreCards {
     display: flex;
+    margin-top: 200px;
 }
-
 
 .subHeading-1 {
     position: absolute;

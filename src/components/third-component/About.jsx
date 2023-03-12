@@ -11,13 +11,17 @@ function About() {
     <div className='aboutComponent'>
       <span className='aboutTitle'>About Us</span>
       <span className='aboutHeading-1'>Allow us to tell you a short story...</span>
-        <div className='aboutCards'>
-            <Card backgroundImg={aboutBackgroundImg1}/>
-            <Card backgroundImg={aboutBackgroundImg2}/>
+        <div className='aboutCards-1'>
+            <Card cards={[
+                {backgroundImg:aboutBackgroundImg1,header:'Chapter I', subHeader:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun'},
+                {backgroundImg:aboutBackgroundImg2,header:'Chapter II', subHeader:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun'},
+            ]}/>
         </div>
-        <div className='aboutCards'>
-            <Card backgroundImg={aboutBackgroundImg3}/>
-            <Card backgroundImg={aboutBackgroundImg4}/>
+        <div className='aboutCards-2'>
+            <Card cards={[
+                {backgroundImg:aboutBackgroundImg3,header:'Chapter III', subHeader:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun'},
+                {backgroundImg:aboutBackgroundImg4,header:'Chapter IV', subHeader:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun'}
+            ]}/>
         </div>
     </div>
   )

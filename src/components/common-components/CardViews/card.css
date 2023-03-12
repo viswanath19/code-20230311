@@ -2,10 +2,42 @@
     width: 500px;
     height: 300px;
     left: 65px;
-    top: 210px;
     position: relative;
     margin-left: 20px;
-    margin-bottom: 20px;
 
     border-radius: 25px;
+}
+
+.cardViewTitle {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 424px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: -70px;
+
+    background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 15px;
+}
+
+.cardViewTitleHeader {
+    position: absolute;
+    height: 26px;
+    margin-left: 10px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    /* or 26px */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
 }
