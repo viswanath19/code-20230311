@@ -18,7 +18,7 @@ function MainComponent() {
                 console.log("Enter Screen About")
                 setCurrentScreen('about');
                 break;
-            case '/':
+            case '/home':
                 setCurrentScreen('home');
                 break;
             default:
@@ -54,6 +54,7 @@ function MainComponent() {
         </div>}
         
         <div className='navBars'>
+            <a className='home-navigation' href='/home'>Rental</a>
             <a className='explore-navigation' href='/explore'>Explore</a>
             <a className='about-navigation' href='/about'>About Us</a>
         </div>
