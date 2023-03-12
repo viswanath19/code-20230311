@@ -36,3 +36,7 @@
     text-align: left;
     padding-left: 10px;
 }
+
+.inputText:focus-visible {
+    outline: none;
+}
