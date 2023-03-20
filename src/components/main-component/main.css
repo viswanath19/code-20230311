@@ -15,15 +15,15 @@
     }
     .mainScreenHeading {
        position: absolute;
-        width: 795px;
-        height: 271px;
-        left: 178px;
+        width: 100%;
+        height: 150px;
+        left: 25px;
         top: 120px;
 
         font-family: 'Exo 2';
         font-style: normal;
         font-weight: 700;
-        font-size: 100px;
+        font-size: 30px;
         line-height: 110px;
         display: flex;
         align-items: center;
@@ -35,8 +35,8 @@
         position: absolute;
         width: 333px;
         height: 44px;
-        left: 40px;
-        top: 289px;
+        left: 100px;
+        top: 225px;
 
         font-family: 'Ubuntu';
         font-style: normal;
@@ -345,25 +345,48 @@
         border-radius: 30px 30px 0px 0px;
         background: url(../../assets/main-background.png);
     }
+
+    @media screen and (min-width: 1000px) {
+        .mainScreenHeading {
+            position: absolute;
+            width: 795px;
+            height: 271px;
+            left: 178px;
+            top: 120px;
     
-    .mainScreenHeading {
-        position: absolute;
-        width: 795px;
-        height: 271px;
-        left: 178px;
-        top: 120px;
-
-        font-family: 'Exo 2';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 100px;
-        line-height: 110px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-        color: #FFFFFF;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 110px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+    
+            color: #FFFFFF;
+        }
     }
+    @media screen and (min-width: 923px) {
+        .mainScreenHeading {
+            position: absolute;
+            width: 795px;
+            height: 271px;
+            top: 120px;
+    
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 100px;
+            line-height: 110px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+    
+            color: #FFFFFF;
+        }
+    }
+    
+    
     .mainScreenSubHeading {
         position: absolute;
         width: 462px;
