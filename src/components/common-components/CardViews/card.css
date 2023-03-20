@@ -1,4 +1,4 @@
-@media screen and (min-width:340px) and (max-width:844px){
+@media screen and (min-width:340px) and (max-width:819px){
     .cardview {
         width: 300px;
         height: 300px;
@@ -62,10 +62,9 @@
     }
 }
 
-@media screen and (min-width:912px)  {
-
+@media screen and (min-width:820px) and (max-width:992px) {
     .cardview {
-        width: 500px;
+        width: 400px;
         height: 300px;
         left: 45px;
         position: relative;
@@ -78,7 +77,73 @@
         box-sizing: border-box;
     
         position: absolute;
-        width: 424px;
+        width: 324px;
+        height: 100px;
+        margin-left: 100px;
+        margin-top: -70px;
+    
+        background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+        backdrop-filter: blur(5px);
+        /* Note: backdrop-filter has minimal browser support */
+    
+        border-radius: 15px;
+    }
+
+    .cardViewTitleHeader {
+        position: absolute;
+        height: 26px;
+        margin-left: 10px;
+    
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 110%;
+        /* or 26px */
+    
+        display: flex;
+        align-items: center;
+    
+        color: #000000;
+    }
+    .cardViewTitleSubHeader {
+        position: absolute;
+        width: 300px;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 30px;
+    
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 110%;
+        /* or 15px */
+    
+        display: flex;
+        text-align: left;
+    
+        color: #000000;
+    }
+}
+
+@media screen and (min-width:923px)  {
+
+    .cardview {
+        width: 400px;
+        height: 300px;
+        left: 45px;
+        position: relative;
+        margin-left: 20px;
+    
+        border-radius: 25px;
+    }
+
+    .cardViewTitle {
+        box-sizing: border-box;
+    
+        position: absolute;
+        width: 324px;
         height: 100px;
         margin-left: 100px;
         margin-top: -70px;
