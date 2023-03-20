@@ -6,8 +6,10 @@ import ButtonComponent from '../common-components/ButtonComponent/ButtonComponen
 import FooterComponent from '../footer-component/FooterComponent';
 import ExploreComponent from '../second-component/ExploreComponent';
 import About from '../third-component/About';
+import { connect } from 'react-redux'
+import { buyCake } from '../../reducer';
 
-function MainComponent() {
+function MainComponent(props) {
     const [currentScreen,setCurrentScreen] = useState('home');
     const [isNavVisible, setNavVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -42,7 +44,9 @@ function MainComponent() {
                 setCurrentScreen('home');
                 break;
             default:
-                setCurrentScreen(null);
+                console.log(props);
+                props.buyCake();
+                setCurrentScreen('home');
                 break;
         }
 
@@ -123,4 +127,16 @@ function MainComponent() {
   )
 }
 
-export default MainComponent
+const mapStateToProps = state => {
+    console.log("state as",state);
+    
+  }
+  
+  const mapDispatchToProps = dispatch => {
+    return {
+      buyCake: () => dispatch(buyCake())
+    }
+  }
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(MainComponent);

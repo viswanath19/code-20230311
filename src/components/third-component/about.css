@@ -1,4 +1,62 @@
-@media screen and (min-width:912px) {
+@media screen and (min-width:923px) {
+    .aboutComponent {
+        width: 100%;
+        height: 900px;
+        top:80px;
+        position: absolute;
+        background-color: #FFFFFF;
+    }
+    .aboutCards-1 {
+        display: flex;
+        margin-top: 125px;
+    }
+    
+    .aboutCards-2 {
+        display: flex;
+        margin-top: 50px;
+    }
+    .aboutTitle {
+        position: absolute;
+        height: 70px;
+        left: 69px;
+    
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 110%;
+        /* or 70px */
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #000000;
+    }
+    
+    .aboutHeading-1 {
+        position: absolute;
+        width: 300px;
+        height: 40px;
+    
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 110%;
+        /* or 20px */
+    
+        display: flex;
+        align-items: center;
+    
+        color: #000000;
+    
+        text-align: left;
+        left: 70px;
+        margin-top: 75px;
+    }
+}
+@media screen and (min-width:820px) and (max-width:992px) {
     .aboutComponent {
         width: 100%;
         height: 900px;
@@ -57,7 +115,7 @@
     }
 }
 
-@media screen and (min-width:390px) and (max-width:844px) {
+@media screen and (min-width:340px) and (max-width:819px) {
     .aboutComponent {
         width: 412px;
         height: 736px;
