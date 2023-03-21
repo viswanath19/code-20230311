@@ -1,34 +1,25 @@
 .buttonComponent {
-    width: 235px;
-    height: 70px;
     left: 791px;
     top: 542px;
-
     background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
     border-radius: 16px;
-
     margin: 10px;
     border: none;
 }
 
 .buttonText {
-    left: 50px;
     right: 0;
     top: 0;
     bottom: 0;
 
     font-family: 'Ubuntu';
     font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
     line-height: 110%;
     /* or 29px */
 
     display: flex;
     align-items: center;
     text-align: center;
-
-    color: #FFFFFF;
 
     position: relative;
 }
