@@ -12,9 +12,9 @@
         box-sizing: border-box;
     
         position: absolute;
-        width: 200px;
+        width: 300px;
         height: 100px;
-        margin-left: 100px;
+        margin-left: 55px;
         margin-top: -75px;
     
         background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
@@ -26,12 +26,12 @@
     .cardViewTitleHeader {
         position: absolute;
         height: 26px;
-        margin-left: 10px;
+        margin-left: 20px;
     
         font-family: 'Ubuntu';
         font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
+        font-weight: 400;
+        font-size: 18px;
         line-height: 110%;
         /* or 26px */
     
@@ -43,10 +43,10 @@
     }
     .cardViewTitleSubHeader {
         position: absolute;
-        width: 200px;
+        width: 300px;
         height: 30px;
-        margin-left: 10px;
-        margin-top: 40px;
+        margin-left: 5px;
+        margin-top: 30px;
     
         font-family: 'Ubuntu';
         font-style: normal;
