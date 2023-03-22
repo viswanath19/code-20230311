@@ -75,9 +75,9 @@ function MainComponent(props) {
                 <ButtonComponent />
             </div>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href='/'>Rental</a>
-                <a className='explore-navigation' href='/explore'>Explore</a>
-                <a className='about-navigation' href='/about'>About Us</a>
+                <a className='home-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
+                <a className='explore-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/explore'}>Explore</a>
+                <a className='about-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </div>}
             {isSmallScreen && <button onClick={()=>setNavVisibility(!isNavVisible)} className="navHeader">
                 <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href="/">Rental</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
                 <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
                 <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </nav>}
@@ -93,9 +93,9 @@ function MainComponent(props) {
 
         {currentScreen === 'explore' && <div className='mainScreenHeader'>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href='/'>Rental</a>
-                <a className='explore-navigation' href='/explore'>Explore</a>
-                <a className='about-navigation' href='/about'>About Us</a>
+                <a className='home-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
+                <a className='explore-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/explore'}>Explore</a>
+                <a className='about-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </div>}
             {isSmallScreen && <button onClick={()=>setNavVisibility(!isNavVisible)} className="navHeader">
                 <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href="/">Rental</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
                 <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
                 <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </nav>}
@@ -112,9 +112,9 @@ function MainComponent(props) {
 
         {currentScreen === 'about' && <div className='mainScreenHeader'>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href='/'>Rental</a>
-                <a className='explore-navigation' href='/explore'>Explore</a>
-                <a className='about-navigation' href='/about'>About Us</a>
+                <a className='home-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
+                <a className='explore-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/explore'}>Explore</a>
+                <a className='about-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </div>}
             {isSmallScreen && <button onClick={()=>setNavVisibility(!isNavVisible)} className="navHeader">
                 <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +122,7 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href="/">Rental</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
                 <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
                 <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </nav>}
