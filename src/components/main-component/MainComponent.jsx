@@ -58,7 +58,7 @@ function MainComponent(props) {
         }
 
     },[window.location.pathname]);
-    console.log("current screen",currentScreen);
+    console.log("current screen",window.location.pathname);
   return (
     <>
         {currentScreen === 'home' && <div className='mainScreen'>
