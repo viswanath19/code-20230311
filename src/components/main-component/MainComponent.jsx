@@ -58,7 +58,7 @@ function MainComponent(props) {
         }
 
     },[window.location.pathname]);
-    console.log("current screen",window.location.pathname);
+    console.log("current screen",window.location.href);
   return (
     <>
         {currentScreen === 'home' && <div className='mainScreen'>
@@ -86,8 +86,8 @@ function MainComponent(props) {
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
                 <a href="/">Rental</a>
-                <a href="/explore">Explore</a>
-                <a href="/about">About Us</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </nav>}
         </div>}
 
@@ -104,8 +104,8 @@ function MainComponent(props) {
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
                 <a href="/">Rental</a>
-                <a href="/explore">Explore</a>
-                <a href="/about">About Us</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </nav>}
             <ExploreComponent />    
         </div>}
@@ -123,8 +123,8 @@ function MainComponent(props) {
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
                 <a href="/">Rental</a>
-                <a href="/explore">Explore</a>
-                <a href="/about">About Us</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
+                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
             </nav>}
             <About />    
         </div>}
