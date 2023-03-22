@@ -39,25 +39,8 @@ function MainComponent(props) {
         }
     };
     useEffect(()=>{
-        switch(window.location.pathname) {
-            case '/explore':
-                setCurrentScreen('explore');
-                break;
-            case '/about':
-                console.log("Enter Screen About")
-                setCurrentScreen('about');
-                break;
-            case '/':
-                //dispatch(buyCake());
-                setCurrentScreen('home');
-                break;
-            default:
-                console.log(props);
-                setCurrentScreen('home');
-                break;
-        }
-
-    },[window.location.pathname]);
+        setNavVisibility(false);
+    },[currentScreen]);
     console.log("current screen",window.location.href);
   return (
     <>
@@ -75,9 +58,9 @@ function MainComponent(props) {
                 <ButtonComponent />
             </div>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
-                <a className='explore-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/explore'}>Explore</a>
-                <a className='about-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
+                <a className='home-navigation' href='#' onClick={()=>setCurrentScreen('home')}>Rental</a>
+                <a className='explore-navigation' href='#' onClick={()=>setCurrentScreen('explore')} >Explore</a>
+                <a className='about-navigation' href='#' onClick={()=>setCurrentScreen('about')}>About Us</a>
             </div>}
             {isSmallScreen && <button onClick={()=>setNavVisibility(!isNavVisible)} className="navHeader">
                 <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,17 +68,17 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
+                <a href='#' onClick={()=>setCurrentScreen('home')}>Rental</a>
+                <a href='#' onClick={()=>setCurrentScreen('explore')}>Explore</a>
+                <a href='#' onClick={()=>setCurrentScreen('about')}>About Us</a>
             </nav>}
         </div>}
 
         {currentScreen === 'explore' && <div className='mainScreenHeader'>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
-                <a className='explore-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/explore'}>Explore</a>
-                <a className='about-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
+                <a className='home-navigation' href='#' onClick={()=>setCurrentScreen('home')}>Rental</a>
+                <a className='explore-navigation' href='#' onClick={()=>setCurrentScreen('explore')} >Explore</a>
+                <a className='about-navigation' href='#' onClick={()=>setCurrentScreen('about')}>About Us</a>
             </div>}
             {isSmallScreen && <button onClick={()=>setNavVisibility(!isNavVisible)} className="navHeader">
                 <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,18 +86,18 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
+                <a href='#' onClick={()=>setCurrentScreen('home')}>Rental</a>
+                <a href='#' onClick={()=>setCurrentScreen('explore')}>Explore</a>
+                <a href='#' onClick={()=>setCurrentScreen('about')}>About Us</a>
             </nav>}
             <ExploreComponent />    
         </div>}
 
         {currentScreen === 'about' && <div className='mainScreenHeader'>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
-                <a className='explore-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/explore'}>Explore</a>
-                <a className='about-navigation' href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
+                <a className='home-navigation' href='#' onClick={()=>setCurrentScreen('home')}>Rental</a>
+                <a className='explore-navigation' href='#' onClick={()=>setCurrentScreen('explore')} >Explore</a>
+                <a className='about-navigation' href='#' onClick={()=>setCurrentScreen('about')}>About Us</a>
             </div>}
             {isSmallScreen && <button onClick={()=>setNavVisibility(!isNavVisible)} className="navHeader">
                 <svg width="40" height="36" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,9 +105,9 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/'}>Rental</a>
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/expore'}>Explore</a>
-                <a href={window.location.href.slice(0,window.location.href.lastIndexOf('/'))+'/about'}>About Us</a>
+                <a href='#' onClick={()=>setCurrentScreen('home')}>Rental</a>
+                <a href='#' onClick={()=>setCurrentScreen('explore')}>Explore</a>
+                <a href='#' onClick={()=>setCurrentScreen('about')}>About Us</a>
             </nav>}
             <About />    
         </div>}
