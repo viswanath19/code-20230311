@@ -6,15 +6,22 @@ import ButtonComponent from '../common-components/ButtonComponent/ButtonComponen
 import FooterComponent from '../footer-component/FooterComponent';
 import ExploreComponent from '../second-component/ExploreComponent';
 import About from '../third-component/About';
-import { connect } from 'react-redux'
-import { buyCake } from '../../reducer';
+// import { connect,useSelector,useDispatch } from 'react-redux'
+// import { buyCake } from '../../reducer';
 
 function MainComponent(props) {
     const [currentScreen,setCurrentScreen] = useState('home');
     const [isNavVisible, setNavVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+    // const numberOfCakes = useSelector(state => state.cakes.numberOfCakes);
+    // const dispatch = useDispatch();
+
+    // useEffect(()=>{
+    //     console.log("number of cakes input as",numberOfCakes);
+    // },[numberOfCakes]);
 
     useEffect(() => {
+        //console.log(numberOfCakes);
         const mediaQuery = window.matchMedia("(max-width: 700px)");
         mediaQuery.addListener(handleMediaQueryChange);
         handleMediaQueryChange(mediaQuery);
@@ -40,12 +47,12 @@ function MainComponent(props) {
                 console.log("Enter Screen About")
                 setCurrentScreen('about');
                 break;
-            case '/home':
+            case '/':
+                //dispatch(buyCake());
                 setCurrentScreen('home');
                 break;
             default:
                 console.log(props);
-                props.buyCake();
                 setCurrentScreen('home');
                 break;
         }
@@ -68,7 +75,7 @@ function MainComponent(props) {
                 <ButtonComponent />
             </div>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href='/home'>Rental</a>
+                <a className='home-navigation' href='/'>Rental</a>
                 <a className='explore-navigation' href='/explore'>Explore</a>
                 <a className='about-navigation' href='/about'>About Us</a>
             </div>}
@@ -78,7 +85,7 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href="/home">Rental</a>
+                <a href="/">Rental</a>
                 <a href="/explore">Explore</a>
                 <a href="/about">About Us</a>
             </nav>}
@@ -86,7 +93,7 @@ function MainComponent(props) {
 
         {currentScreen === 'explore' && <div className='mainScreenHeader'>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href='/home'>Rental</a>
+                <a className='home-navigation' href='/'>Rental</a>
                 <a className='explore-navigation' href='/explore'>Explore</a>
                 <a className='about-navigation' href='/about'>About Us</a>
             </div>}
@@ -96,7 +103,7 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href="/home">Rental</a>
+                <a href="/">Rental</a>
                 <a href="/explore">Explore</a>
                 <a href="/about">About Us</a>
             </nav>}
@@ -105,7 +112,7 @@ function MainComponent(props) {
 
         {currentScreen === 'about' && <div className='mainScreenHeader'>
             {!isSmallScreen && <div className='navBars'>
-                <a className='home-navigation' href='/home'>Rental</a>
+                <a className='home-navigation' href='/'>Rental</a>
                 <a className='explore-navigation' href='/explore'>Explore</a>
                 <a className='about-navigation' href='/about'>About Us</a>
             </div>}
@@ -115,7 +122,7 @@ function MainComponent(props) {
                 </svg>
             </button>}
             {isSmallScreen && isNavVisible &&<nav className="Nav">
-                <a href="/home">Rental</a>
+                <a href="/">Rental</a>
                 <a href="/explore">Explore</a>
                 <a href="/about">About Us</a>
             </nav>}
@@ -127,16 +134,4 @@ function MainComponent(props) {
   )
 }
 
-const mapStateToProps = state => {
-    console.log("state as",state);
-    
-  }
-  
-  const mapDispatchToProps = dispatch => {
-    return {
-      buyCake: () => dispatch(buyCake())
-    }
-  }
-
-
-export default connect(mapStateToProps,mapDispatchToProps)(MainComponent);
+export default MainComponent;
