@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Vodaphone
+        </title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                background-color: #cccccc;
+            }
+            td {
+                padding: 0;
+            }
+            img {
+                border: 0;
+            }
+            .wrapper {
+                width: 100%;
+                table-layout: fixed;
+                background-color: #cccccc;
+                padding-bottom: 60px;
+            }
+            .main {
+                background-color: #ffffff;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 600px;
+                border-spacing: 0;
+                font-family: sans-serif;
+                color: green;
+            }
+            .message {
+                text-align: center;
+            }
+            @media screen and (max-width: 600px) {
+
+                .two-columns .column-1 {
+                    width: 100%;
+                    max-width: 300%;
+                    vertical-align: top;
+                    text-align: center;
+                }
+                .two-columns .column-2 {
+                    width: 90%;
+                    max-width: 300%;
+                    vertical-align: top;
+                    text-align: center;
+                    margin-left: 10%;
+                    margin-top: 5%;
+                    border-spacing: 10px;
+                }
+                .column-2 .label {
+                    width: 30%;
+                    text-align: left;
+                }
+                .column-2 .statictext {
+                    width: 60%;
+                    text-align: left;
+                }
+                .two-columns {
+                    text-align: center;
+                }
+                .message-table {
+                    padding: 5% 0;
+                }
+                .footer-table {
+                    padding-bottom: 5%;
+                }
+            }
+            @media screen and (min-width: 600px) {
+                .column-1 {
+                    width: 30%;
+                    max-width: 300%;
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: center;
+                }
+                .column-2 {
+                    width: 70%;
+                    max-width: 300%;
+                    display: inline-block;
+                    vertical-align: top;
+                    text-align: center;
+                    border-spacing: 10px;
+                }
+                .column-2 td {
+                    text-align: left;
+                }
+                .two-columns {
+                    text-align: center;
+                    display: flex;
+                    padding: 5%;
+                }
+                .message-table {
+                    padding-bottom: 5%;
+                }
+                .footer-table {
+                    padding-bottom: 5%;
+                }
+                .main-section-data {
+                    display: flex;
+                    padding: 5%;
+                }
+                
+            }
+            .main-section-buttons {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                border: none;
+                color: #ffffff;
+                background-color: aquamarine;
+                text-align: center;
+                word-break: keep-all;
+                font-weight: bold;
+            }
+            
+            .footer {
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+            .footer-button {
+                background-color: green;
+                color: #ffffff;
+                height: 50px;
+                border: none;
+            }
+            .footer-data {
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <center class="wrapper">
+            <table class="main" width="100%">
+                <tr>
+                    <td height="8" style="background-color: green;"></td>
+                </tr>
+                <!--logo section-->
+                <tr>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td class="two-columns">
+                                    <table class="column-1">
+                                        <tr>
+                                            <td>
+                                                <img src="https://servisler.vodafone.com.tr/img/vf-logo-white.png" alt="vodafone" width="75" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column-2">
+                                        <tr>
+                                            <td class="label">Account Number:</td>
+                                            <td class="statictext">STATIC_ACCOUNT_NUMBER</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Customer Name:</td>
+                                            <td class="statictext">STATIC_CUSTOMER_NAME</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Bill Number:</td>
+                                            <td class="statictext">STATIC_BILL_NUMBER</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!--Main Section-->
+                <tr class="main-section-row">
+                    <td>
+                        <div class="main-section-data">
+                            <table width="100%">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <button class="main-section-buttons">Recharge Amount : 2$</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <button class="main-section-buttons">Tax Amount : 0.5$</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <button class="main-section-buttons">Total Amount : 2.5$</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+
+                </tr>
+                <!--Message Section-->
+                <tr class="message-row">
+                    <td>
+                        <table width="100%" class="message-table">
+                            <tr>
+                                <td class="message">
+                                    STATIC_HTML_CONTENT_MESSAGE
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--FOOTER-->
+                <tr class="footer">
+                    <td>
+                        <table width="100%" class="footer-table">
+                            <tr>
+                                <td class="footer-data">
+                                    <button class="footer-button">Click Here To View</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    
+                </tr>
+
+            </table>
+
+        </center>
+    </body>
+</html>
